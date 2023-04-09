@@ -1,0 +1,53 @@
+#course{
+  background: #121212;
+  .course{
+    padding:  50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button{
+      width: 169px;
+      height: 44px;
+      background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+      border-radius: 50px;
+      border: none;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      color: #FFFFFF;
+    }
+    &--item{
+      display: flex;
+      justify-content: space-between;
+      width: 250px;
+      &--one{
+        p{
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          color: rgba(255, 255, 255, 0.24);
+          padding: 5px 0;
+        }
+      }
+      &--two{
+        p{
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          color: white;
+          padding: 5px 0;
+        }
+      }
+    }
+    &--line{
+      width: 650px;
+      &--one{
+        p{
+          color: white;
+        }
+      }
+    }
+  }
+}
