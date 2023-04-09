@@ -1,18 +1,23 @@
 import React, {FC} from 'react';
 import "./Course.scss"
-const Course:FC = (dark,setDark) => {
+const Course = ({dark,setDark}:any) => {
     return (
         <>
             <div id="course" style={{
-                background:dark ? "white": "black"
+                background:dark ? "white": "",
+
             }}>
                 <div className="container">
                     <div className="course">
-                        <button>
+                        <button style={{
+                            color:dark ? "black" : ""
+                        }}>
                             Заказать курс
                         </button>
                         <div className="course--item">
-                        <div className="course--item--one">
+                        <div className="course--item--one" style={{
+                            color:dark ? "black" : ""
+                        }}>
                             <p>Учеников всего:</p>
                             <p>Успешно закончили курс:</p>
                         </div>

@@ -1,10 +1,11 @@
-import React, {FC, useState} from 'react';
+import React from 'react';
 import "./Header.scss"
 import {NavLink} from "react-router-dom";
 // @ts-ignore
 import logo  from "../../assets/images/logo.svg"
-const Header:FC  = () => {
-    const [dark , setDark] = useState<boolean>(false)
+
+const Header  = ({dark, getDark} :any) => {
+
 
     return (
         <div id={"header"}>
@@ -22,7 +23,7 @@ const Header:FC  = () => {
                         <NavLink to={"/"}>Контакты</NavLink>
                     </div>
                     <div className="header--btn">
-                        <button className={"dark"} onClick={() => setDark(!dark)} style={{
+                        <button className={"dark"} onClick={() => getDark(!dark)} style={{
                             background: dark ? "white" : "black",
                             color: dark ? "black" : "white"
                         }}>{

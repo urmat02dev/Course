@@ -1,13 +1,14 @@
 import React from 'react';
 import "./Hero.scss"
-const Hero = () => {
+const Hero = ({dark , getDark}:any) => {
     return (
         <>
             <div id="hero">
                 <div className="container">
                     <div className="hero">
                         <div className="hero--title">
-                            <h1>Первый курс<br/>
+                            <h1
+                            >Первый курс<br/>
                                 по компьютерной сборке</h1>
                         </div>
                         <div className="hero--data">
