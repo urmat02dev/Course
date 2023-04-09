@@ -1,0 +1,41 @@
+#example{
+  background: #000;
+  .example{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--left{
+      width: 320px;
+      height: 320px;
+      border: 30px solid rebeccapurple;
+      position: relative;
+      img{
+        width: 320px;
+        height: 320px;
+        position: absolute;
+        left: 10px;
+        top: 40px;
+      }
+    }
+    &--right{
+      display: flex;
+      flex-direction: column;
+      h1{
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 140%;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+      }
+      p{
+        width: 600px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: #FFFFFF;
+
+      }
+    }
+  }
+}
